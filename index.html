@@ -713,40 +713,44 @@ footer{
 </section>
 
 <!-- ══════════════ ABOUT ══════════════ -->
-<section class="sec" id="about">
-  <div class="container" style="display: flex; justify-content: center; align-items: center; min-height: 400px;">
-    
-    <div class="about-content" style="max-width: 900px; text-align: center; width: 100%;">
-      <div class="eyebrow rv" style="justify-content: center;">
+<section class="sec" id="about" style="padding: 100px 0; background: transparent;">
+  <div class="container">
+    <div class="about-wrapper" style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      
+      <div class="eyebrow rv" style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
         <div class="etag" data-en="Profile" data-ar="الملف الشخصي">Profile</div>
-        <div class="eline"></div>
+        <div class="eline" style="width: 50px; height: 1px; background: var(--g);"></div>
       </div>
       
-      <h2 class="stitle rv" style="font-size: 3rem; margin-bottom: 30px;">
+      <h2 class="stitle rv" style="font-size: clamp(2rem, 8vw, 3.5rem); text-align: center; margin-bottom: 30px;">
         About <span class="g">Me</span>
       </h2>
 
-      <div class="about-text rv" style="color: var(--muted2); line-height: 1.8; font-size: 1.2rem;">
-        <p>
-          I'm <strong>Alaa Elgendy</strong>, a Junior Data Analyst & AI Engineer based in Alexandria, Egypt[cite: 17]. 
-          I hold a B.E. in Nuclear & Radiation Engineering from Alexandria University[cite: 17].
-        </p>
-        <p style="margin-top: 20px;">
-          I specialize in Python, SQL, Power BI, and predictive modeling. 
-          My thesis applied LSTM deep learning to determine LOCA reactor break sizes, achieving <strong>80.68% accuracy</strong>[cite: 22].
-        </p>
+      <div class="about-content" style="max-width: 850px; width: 100%; text-align: center;">
+        <div class="about-text rv" style="color: var(--muted2); line-height: 1.8; font-size: 1.15rem;">
+          <p>
+            I'm <strong>Alaa Elgendy</strong>, a Junior Data Analyst & AI Engineer based in Alexandria, Egypt. 
+            I hold a B.E. in Nuclear & Radiation Engineering from Alexandria University[cite: 45, 53].
+          </p>
+          <p style="margin-top: 20px;">
+            I specialize in Python, SQL, Power BI, and predictive modeling. 
+            My thesis applied LSTM deep learning to determine LOCA reactor break sizes, achieving <strong>80.68% accuracy</strong>.
+          </p>
+        </div>
+
+        <div class="about-skills-tags rv" style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 40px;">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">TensorFlow/Keras</span>
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">MATLAB</span>
+          <span class="skill-tag">LSTM</span>
+        </div>
       </div>
 
-      <div class="about-skills-tags rv" style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 40px;">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">Tableau</span>
-        <span class="skill-tag">Power BI</span>
-        <span class="skill-tag">Deep Learning</span>
-        <span class="skill-tag">R Programming</span>
-      </div>
     </div>
-
   </div>
 </section>
 
