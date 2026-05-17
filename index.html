@@ -1164,5 +1164,66 @@ document.getElementById("cvBtn").addEventListener("click",e=>{
 // Initial hero reveal
 setTimeout(()=>document.querySelectorAll("#hero .rv").forEach((el,i)=>setTimeout(()=>el.classList.add("in"),i*110+200)),200);
 </script>
+  <div class="fixed-decorations">
+    <div class="decor-item nucleus">
+        <i class="devicon-atom-original colored"></i>
+    </div>
+    <div class="decor-item robot">
+        <span>🤖</span>
+    </div>
+</div>
+
+<style>
+.fixed-decorations {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999; /* عشان يظهر فوق كل حاجة */
+    pointer-events: none; /* عشان ميعطلش الضغط على أي حاجة تحته */
+}
+
+.decor-item {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+.nucleus {
+    animation-delay: 0s;
+    color: #22d3ee; /* لون سماوي */
+}
+
+.robot {
+    animation-delay: 1.5s; /* تأخير بسيط عشان يتحركوا عكس بعض */
+    font-size: 1.2rem;
+}
+
+/* حركة عائمة بسيطة */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* لو الشاشة صغيرة اوي ممكن نصغرهم شوية */
+@media (max-width: 768px) {
+    .decor-item {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1rem;
+    }
+}
+</style>
 </body>
 </html>
