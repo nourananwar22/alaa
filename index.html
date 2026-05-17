@@ -230,31 +230,9 @@ nav{
 
 /* ─── HERO ─────────────────────────────────────── */
 #hero{justify-content:center;}
-.hero-layout {
-  display: grid;
-  grid-template-columns: 1fr; /* غيرنا دي عشان نلغي عمود الصورة */
-  gap: 36px;
-  align-items: center;
-  justify-items: center; /* ضيفنا دي عشان العناصر تيجي في النص */
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  text-align: center; /* ضيفنا دي عشان الكلام نفسه يبقى في النص */
-}
-
-/* تعديل بسيط للوصف عشان ميبقاش عريض أوي */
-.hero-desc {
-  margin-inline: auto; 
-}
-
-/* عشان الزراير تيجي في النص */
-.hero-ctas {
-  justify-content: center;
-}
-
-/* عشان الإحصائيات تيجي في النص */
-.stats-row {
-  justify-content: center;
+.hero-layout{
+  display:grid;grid-template-columns:1fr auto;
+  gap:56px;align-items:center;width:100%;max-width:1300px;margin:0 auto;
 }
 .sbadge{
   display:inline-flex;align-items:center;gap:8px;
