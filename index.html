@@ -37,7 +37,24 @@
   --smooth:cubic-bezier(.4,0,.2,1);
   --bounce:cubic-bezier(.68,-0.55,.265,1.55);
 }
-
+} /* دي قفلة الـ root اللي عندك */
+/* 1. إخفاء صورة الـ About وتوسيع النص */
+.about-img { 
+    display: none !important; 
+}
+.about-layout { 
+    grid-template-columns: 1fr !important; 
+    text-align: center !important; 
+}
+.about-text { 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+/* 2. تنسيق سيكشن الشهادات الجديد */
+#certifications { 
+    padding-block: 100px; 
+    text-align: center; 
+}
 /* ─── RESET ──────────────────────────────────── */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 
@@ -894,7 +911,15 @@ footer{
     </div>
   </div>
 </section>
+  <!-- ══════════════ certification id ══════════════ -->
+<section class="sec" id="certifications">
+      <div class="container">
+        <h2 style="font-size: clamp(2rem, 5vw, 3.5rem); color: #fff; margin-bottom: 20px;" data-en="Certifications" data-ar="الشهادات">Certifications</h2>
+        <p style="color: var(--cyan); font-size: 1.1rem;" data-en="Professional Certificates & Achievements" data-ar="الشهادات والإنجازات المهنية">Professional Certificates & Achievements</p>
+      </div>
+    </section>
 
+  </body> </html> ```
 <!-- ══════════════ CONTACT ══════════════ -->
 <section class="sec" id="contact" data-idx="5">
   <div class="contact-inner">
