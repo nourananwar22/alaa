@@ -535,22 +535,44 @@ nav{
   text-shadow: 0 0 10px var(--cyan);
 }
   /* ─── certification ─────────────────────────────────────── */
-  <section class="sec" id="certifications" data-idx="5" style="padding-block: 80px;">
-  <div class="container" style="max-width: 1100px; margin: 0 auto; padding-inline: 20px;">
-    <h2 style="text-align: center; font-size: 3rem; margin-bottom: 40px; color: #fff;" data-en="Certifications" data-ar="الشهادات">Certifications</h2>
+ <section class="sec" id="certificates" style="padding-top: 100px;">
+  <div class="container">
     
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+    <h2 class="stitle rv" style="text-align: center; margin-bottom: 50px;" data-en="Professional <span class='g'>Certifications</span>" data-ar="الشهادات <span class='g'>المهنية</span>">
+      Professional <span class="g">Certifications</span>
+    </h2>
+
+    <div class="cert-grid rv" style="display: flex; justify-content: center;">
       
-      <div style="background: rgba(139,92,246,0.05); border: 1px solid rgba(139,92,246,0.2); padding: 30px; border-radius: 20px; transition: 0.3s;">
-        <h3 style="color: var(--cyan); margin-bottom: 10px;" data-en="Data Analysis Professional" data-ar="احتراف تحليل البيانات">Data Analysis Professional</h3>
-        <p style="color: var(--muted2);" data-en="Google / Coursera" data-ar="جوجل / كورسيرا">Google / Coursera</p>
-      </div>
+      <div class="cert-card" style="max-width: 600px; background: var(--glass); border: 1px solid var(--gb); padding: 30px; border-radius: var(--r2); text-align: center; box-shadow: 0 15px 35px rgba(0,0,0,0.3);">
+        
+        <div class="cert-image-box" style="margin-bottom: 25px; border-radius: var(--r); overflow: hidden; border: 1px solid var(--gb2);">
+          <a href="https://coursera.org/verify/professional-cert/N9BGYZ8I0OP5" target="_blank">
+            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~N9BGYZ8I0OP5/CERTIFICATE_LANDING_PAGE~N9BGYZ8I0OP5.jpeg" 
+                 alt="Google Data Analytics Professional Certificate" 
+                 style="width: 100%; height: auto; display: block;">
+          </a>
+        </div>
 
-      <div style="background: rgba(139,92,246,0.05); border: 1px solid rgba(139,92,246,0.2); padding: 30px; border-radius: 20px; transition: 0.3s;">
-        <h3 style="color: var(--cyan); margin-bottom: 10px;" data-en="AI & Machine Learning" data-ar="الذكاء الاصطناعي والتعلم الآلي">AI & Machine Learning</h3>
-        <p style="color: var(--muted2);" data-en="IBM Specialty" data-ar="تخصص آي بي إم">IBM Specialty</p>
-      </div>
+        <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 10px;">Google Data Analytics Professional Certificate</h3>
+        <p style="color: var(--cyan); font-size: 0.9rem; margin-bottom: 20px; font-weight: 500;">Issued by Google via Coursera</p>
+        
+        <div class="cert-skills" style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 25px;">
+          <div class="skill-with-logo"><i class="devicon-python-plain"></i> <span>Python</span></div>
+          <div class="skill-with-logo"><i class="devicon-mysql-plain"></i> <span>SQL</span></div>
+          <div class="skill-with-logo">
+             <svg width="16" height="16" viewBox="0 0 24 24" fill="#22d3ee" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;"><path d="M11 2h2v7h7v2h-7v7-h-2v-7H4v-2h7V2z"/></svg>
+             <span>Tableau</span>
+          </div>
+          <div class="skill-with-logo"><span>Spreadsheets</span></div>
+        </div>
 
+        <a href="https://coursera.org/verify/professional-cert/N9BGYZ8I0OP5" target="_blank" class="cert-link" style="justify-content: center; width: 100%;">
+          <i class="devicon-googlecloud-plain"></i> 
+          <span data-en="Verify Certificate" data-ar="التحقق من الشهادة">Verify Certificate</span>
+        </a>
+
+      </div>
     </div>
   </div>
 </section>
